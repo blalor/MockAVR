@@ -70,6 +70,18 @@ extern volatile uint8_t virtualOCR1C;
 #define TCNT1 (virtualTCNT1)
 extern volatile uint8_t virtualTCNT1;
 
+#define UBRR0 (virtualUBRR0)
+extern volatile uint16_t virtualUBRR0;
+
+#define UCSR0A (virtualUCSR0A)
+extern volatile uint16_t virtualUCSR0A;
+
+#define UCSR0B (virtualUCSR0B)
+extern volatile uint16_t virtualUCSR0B;
+
+#define UDR0 (virtualUDR0)
+extern volatile uint16_t virtualUDR0;
+
 // GTCCR
 #define PSR0 0
 #define PSR1 1
@@ -134,5 +146,14 @@ extern volatile uint8_t virtualTCNT1;
 #define USICLK 1
 #define USITC  0
 
+// UCSR0B
+#define RXCIE0 7
+#define TXCIE0 6
+#define UDRIE0 5
+#define RXEN0  4
+#define TXEN0  3
+#define UCSZ02 2
+#define RXB80  1
+#define TXB80  0
 
 #endif

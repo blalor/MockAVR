@@ -26,6 +26,11 @@ volatile uint8_t virtualOCR1B;
 volatile uint8_t virtualOCR1C;
 volatile uint8_t virtualTCNT1;
 
+volatile uint16_t virtualUBRR0;
+volatile uint16_t virtualUCSR0A;
+volatile uint16_t virtualUCSR0B;
+volatile uint16_t virtualUDR0;
+
 uint8_t parity_even_bit(const uint8_t v) {
     uint8_t ret = v;
     
