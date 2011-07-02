@@ -46,11 +46,17 @@ extern volatile uint8_t virtualTCCR0B;
 #define OCR0A (virtualOCR0A)
 extern volatile uint8_t virtualOCR0A;
 
+#define OCR0B (virtualOCR0B)
+extern volatile uint8_t virtualOCR0B;
+
 #define TIMSK (virtualTIMSK)
 extern volatile uint8_t virtualTIMSK;
 
 #define TIFR (virtualTIFR)
 extern volatile uint8_t virtualTIFR;
+
+#define TIFR0 (virtualTIFR0)
+extern volatile uint8_t virtualTIFR0;
 
 #define TCNT0 (virtualTCNT0)
 extern volatile uint8_t virtualTCNT0;
@@ -93,8 +99,14 @@ extern volatile uint16_t virtualUDR0;
 #define TSM  7
 
 // TCCR0A
-#define WGM00 0
-#define WGM01 1
+#define COM0A1 7
+#define COM0A0 6
+#define COM0B1 5
+#define COM0B0 4
+
+
+#define WGM01  1
+#define WGM00  0
 
 // TCCR0B
 #define CS00  0
