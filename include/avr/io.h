@@ -124,6 +124,9 @@ extern volatile uint8_t virtualTCNT1;
 // PCMSK
 #define PCINT0 0
 
+
+#define PCINT3 3
+
 // USICR
 #define USISIE 7
 #define USIOIE 6
