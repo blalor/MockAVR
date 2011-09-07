@@ -34,6 +34,7 @@ extern volatile uint8_t virtualGIMSK;
 #define PCMSK (virtualPCMSK)
 extern volatile uint8_t virtualPCMSK;
 
+// timer0
 #define GTCCR (virtualGTCCR)
 extern volatile uint8_t virtualGTCCR;
 
@@ -46,15 +47,22 @@ extern volatile uint8_t virtualTCCR0B;
 #define OCR0A (virtualOCR0A)
 extern volatile uint8_t virtualOCR0A;
 
+#define OCR0B (virtualOCR0B)
+extern volatile uint8_t virtualOCR0B;
+
 #define TIMSK (virtualTIMSK)
 extern volatile uint8_t virtualTIMSK;
 
 #define TIFR (virtualTIFR)
 extern volatile uint8_t virtualTIFR;
 
+#define TIFR0 (virtualTIFR0)
+extern volatile uint8_t virtualTIFR0;
+
 #define TCNT0 (virtualTCNT0)
 extern volatile uint8_t virtualTCNT0;
 
+// timer1
 #define TCCR1 (virtualTCCR1)
 extern volatile uint8_t virtualTCCR1;
 
@@ -70,6 +78,41 @@ extern volatile uint8_t virtualOCR1C;
 #define TCNT1 (virtualTCNT1)
 extern volatile uint8_t virtualTCNT1;
 
+// timer2
+#define TCCR2A (virtualTCCR2A)
+extern volatile uint8_t virtualTCCR2A;
+
+#define TCCR2B (virtualTCCR2B)
+extern volatile uint8_t virtualTCCR2B;
+
+#define OCR2A (virtualOCR2A)
+extern volatile uint8_t virtualOCR2A;
+
+#define OCR2B (virtualOCR2B)
+extern volatile uint8_t virtualOCR2B;
+
+#define TIMSK2 (virtualTIMSK2)
+extern volatile uint8_t virtualTIMSK2;
+
+#define TIFR2 (virtualTIFR2)
+extern volatile uint8_t virtualTIFR2;
+
+#define TCNT2 (virtualTCNT2)
+extern volatile uint8_t virtualTCNT2;
+
+// uart0
+#define UBRR0 (virtualUBRR0)
+extern volatile uint16_t virtualUBRR0;
+
+#define UCSR0A (virtualUCSR0A)
+extern volatile uint16_t virtualUCSR0A;
+
+#define UCSR0B (virtualUCSR0B)
+extern volatile uint16_t virtualUCSR0B;
+
+#define UDR0 (virtualUDR0)
+extern volatile uint16_t virtualUDR0;
+
 // GTCCR
 #define PSR0 0
 #define PSR1 1
@@ -81,8 +124,14 @@ extern volatile uint8_t virtualTCNT1;
 #define TSM  7
 
 // TCCR0A
-#define WGM00 0
-#define WGM01 1
+#define COM0A1 7
+#define COM0A0 6
+#define COM0B1 5
+#define COM0B0 4
+
+
+#define WGM01  1
+#define WGM00  0
 
 // TCCR0B
 #define CS00  0
@@ -137,5 +186,30 @@ extern volatile uint8_t virtualTCNT1;
 #define USICLK 1
 #define USITC  0
 
+// UCSR0B
+#define RXCIE0 7
+#define TXCIE0 6
+#define UDRIE0 5
+#define RXEN0  4
+#define TXEN0  3
+#define UCSZ02 2
+#define RXB80  1
+#define TXB80  0
+
+// TCCR2A
+#define COM2A1 7
+#define COM2A0 6
+#define COM2B1 5
+#define COM2B0 4
+
+
+#define WGM21  1
+#define WGM20  0
+
+// TCCR2B
+#define WGM22 3
+#define CS22  2
+#define CS21  1
+#define CS20  0
 
 #endif
