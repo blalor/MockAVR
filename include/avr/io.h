@@ -156,7 +156,7 @@ extern volatile uint16_t virtualUDR0;
 
 // TIFR
 #define OCF0A 4
-
+#define OCF1B 5
 #define OCF1A 6
 
 // PORTB
