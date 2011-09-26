@@ -113,6 +113,29 @@ extern volatile uint8_t virtualUCSR0B;
 #define UDR0 (virtualUDR0)
 extern volatile uint8_t virtualUDR0;
 
+// twi
+#define TWBR (virtualTWBR)
+extern volatile uint8_t virtualTWBR;
+
+#define TWCR (virtualTWCR)
+extern volatile uint8_t virtualTWCR;
+
+#define TWSR (virtualTWSR)
+extern volatile uint8_t virtualTWSR;
+
+#define TWDR (virtualTWDR)
+extern volatile uint8_t virtualTWDR;
+
+#define TWAR (virtualTWAR)
+extern volatile uint8_t virtualTWAR;
+
+#define TWAMR (virtualTWAMR)
+extern volatile uint8_t virtualTWAMR;
+
+// prr
+#define PRR (virtualPRR)
+extern volatile uint8_t virtualPRR;
+
 // GTCCR
 #define PSR0 0
 #define PSR1 1
@@ -213,5 +236,71 @@ extern volatile uint8_t virtualUDR0;
 #define CS22  2
 #define CS21  1
 #define CS20  0
+
+// TWBR
+#define TWBR0 0
+#define TWBR1 1
+#define TWBR2 2
+#define TWBR3 3
+#define TWBR4 4
+#define TWBR5 5
+#define TWBR6 6
+#define TWBR7 7
+
+// TWSR
+#define TWPS0 0
+#define TWPS1 1
+#define TWS3 3
+#define TWS4 4
+#define TWS5 5
+#define TWS6 6
+#define TWS7 7
+
+// TWAR
+#define TWGCE 0
+#define TWA0 1
+#define TWA1 2
+#define TWA2 3
+#define TWA3 4
+#define TWA4 5
+#define TWA5 6
+#define TWA6 7
+
+// TWDR
+#define TWD0 0
+#define TWD1 1
+#define TWD2 2
+#define TWD3 3
+#define TWD4 4
+#define TWD5 5
+#define TWD6 6
+#define TWD7 7
+
+// TWCR
+#define TWIE 0
+#define TWEN 2
+#define TWWC 3
+#define TWSTO 4
+#define TWSTA 5
+#define TWEA 6
+#define TWINT 7
+
+// TWAMR
+#define TWAM0 0
+#define TWAM1 1
+#define TWAM2 2
+#define TWAM3 3
+#define TWAM4 4
+#define TWAM5 5
+#define TWAM6 6
+
+// PRR
+#define PRADC 0
+#define PRUSART0 1
+#define PRSPI 2
+#define PRTIM1 3
+#define PRTIM0 5
+#define PRTIM2 6
+#define PRTWI 7
 
 #endif

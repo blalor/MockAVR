@@ -47,6 +47,17 @@ volatile uint8_t virtualUCSR0A;
 volatile uint8_t virtualUCSR0B;
 volatile uint8_t virtualUDR0;
 
+// twi
+volatile uint8_t virtualTWBR;  // TWI Bit Rate Register
+volatile uint8_t virtualTWCR;  // TWI Control Register
+volatile uint8_t virtualTWSR;  // TWI Status Register
+volatile uint8_t virtualTWDR;  // TWI Data Register
+volatile uint8_t virtualTWAR;  // TWI (Slave) Address Register
+volatile uint8_t virtualTWAMR; // TWI (Slave) Address Mask Register
+
+// prr
+volatile uint8_t virtualPRR;
+
 uint8_t parity_even_bit(const uint8_t v) {
     uint8_t ret = v;
     
