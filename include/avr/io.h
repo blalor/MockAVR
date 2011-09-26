@@ -105,13 +105,13 @@ extern volatile uint8_t virtualTCNT2;
 extern volatile uint16_t virtualUBRR0;
 
 #define UCSR0A (virtualUCSR0A)
-extern volatile uint16_t virtualUCSR0A;
+extern volatile uint8_t virtualUCSR0A;
 
 #define UCSR0B (virtualUCSR0B)
-extern volatile uint16_t virtualUCSR0B;
+extern volatile uint8_t virtualUCSR0B;
 
 #define UDR0 (virtualUDR0)
-extern volatile uint16_t virtualUDR0;
+extern volatile uint8_t virtualUDR0;
 
 // GTCCR
 #define PSR0 0
